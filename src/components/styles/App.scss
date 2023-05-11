@@ -47,7 +47,7 @@
   background-size:cover;
   display: flex;
   flex-direction: column;
-  height:1140px;
+  height:100vh;
   width: 100%;
   align-content: center;
   &_section2{
@@ -62,10 +62,15 @@
     font-family: 'Droid Serif';
     font-weight: 700;
     font-size: 96px;
+    padding: 20px;
+    animation-name: animation2;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
   }
   &_text{
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
+    padding: 20px;
   }
 }
 .Contacto{
@@ -104,6 +109,72 @@
     height: 38px;
     
     
+  }
+}
+.sobreMi{
+  background: #ED8C8C;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  &_img{
+    display: flex;
+    box-sizing: border-box;
+    width: 643px;
+    height: 803.75px;
+    left: 105px;
+    top: 140px;
+    border: 15px solid #FDD9D9;
+    border-radius: 321.5px;
+    align-items: center;
+    img{
+      animation-name: animation1;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+    }
+  }
+  &_title{
+    font-family: Droid Serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px;
+    animation-name: animation2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+  }
+  &_text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 51px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px;
+    animation-name: animation2;
+      animation-duration: 2s;
+      animation-iteration-count: 1;
+
+  }
+}
+
+@keyframes animation1{
+  0%{
+    transform:translateX(-100%);
+  }
+  100%{
+    transform:translateX(0%);
+  }
+}
+@keyframes animation2{
+  0%{
+    transform:translateY(-100%);
+  }
+  100%{
+    transform:translateY(0%)
   }
 }
 

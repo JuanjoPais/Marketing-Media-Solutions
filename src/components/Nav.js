@@ -1,4 +1,5 @@
 import React from 'react'
+import Contacto from './Contacto'
 
 const Nav = () => {
   return (
@@ -15,6 +16,7 @@ const Nav = () => {
                 <li>CONTACTO</li>
             </ul>
         </section>
+        <Contacto/>
     </div>
   )
 }
