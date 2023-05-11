@@ -7,7 +7,7 @@ const Main = () => {
     const navigate = useNavigate()
     const onMouseWheel = (e)=>{
     if(e.deltaY>0){
-        navigate("/")
+        navigate("/servicios")
     }else{
         navigate("/")
     }
