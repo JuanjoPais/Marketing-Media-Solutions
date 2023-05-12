@@ -11,7 +11,7 @@
 .nav {
 	display: flex;
 	padding: 3% 10% 0 6%;
-	width: 100%;
+	width: 100vh;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -32,7 +32,7 @@
 		//padding: 1em;
 		margin-left: 2em;
 		align-content: flex-end;
-		width: 100%;
+		width: 100vh;
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -55,14 +55,14 @@
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 100%;
+	width: 100vh;
 	align-content: center;
 	&_section2 {
 		position: absolute;
-		width: 100%;
+		width: 110em;
 		align-items: center;
-		left: 134px;
-		top: 432px;
+		left: 100px;
+		top: 270px;
 	}
 
 	&_title {
