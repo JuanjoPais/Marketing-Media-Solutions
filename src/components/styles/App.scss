@@ -164,23 +164,6 @@
 	}
 }
 
-@keyframes animation1 {
-	0% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
-@keyframes animation2 {
-	0% {
-		transform: translateY(-100%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
-
 .servicios {
 	height: 100vh;
 	background-color: #f7f7f7;
@@ -195,6 +178,7 @@
 		font-weight: 700;
 		font-size: 60px;
 		line-height: 183.64%;
+		letter-spacing: 0.25em;
 	}
 	&_texto {
 		width: 75%;
@@ -237,7 +221,58 @@
 		font-size: 2em;
 		line-height: 30px;
 		text-align: center;
+		box-shadow: 0px 2px 7px 0px rgba(0,0,0,0.75);
 
 		color: #000000;
+	}
+	
+}
+#frame1,#frame2{
+	animation-name: animation3-1;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+#frame3,#frame4{
+	animation-name: animation3-2;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+	//ANIMATIONS
+@keyframes animation1 {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+@keyframes animation2 {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes animation3-1{
+	0% {
+		transform: translateX(-25%);
+		transform: translateY(+25%);
+	}
+	100%{
+		transform: translateX(0%);
+		transform: translateY(0%);
+	}
+}
+
+@keyframes animation3-2{
+	0% {
+		transform: translateX(-25%);
+		transform: translateY(-25%);
+	}
+	100%{
+		transform: translateX(0%);
+		transform: translateY(0%);
 	}
 }
