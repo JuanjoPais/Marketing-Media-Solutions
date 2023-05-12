@@ -180,3 +180,64 @@
 		transform: translateY(0%);
 	}
 }
+
+.servicios {
+	height: 100vh;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5%;
+	&_titulo {
+		font-family: "Droid Serif";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 183.64%;
+	}
+	&_texto {
+		width: 75%;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 44px;
+		text-align: center;
+		color: #000000;
+		margin-top: -2%;
+	}
+	&_marca {
+		color: #ed8c8c;
+		font-weight: 700;
+	}
+	&_contenedorRecuadros {
+		margin-left: 50%;
+		margin-right: 50%;
+		width: 73%;
+		height: 50vh;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+		gap: 5%;
+		justify-items: center;
+	}
+	&_recuadro {
+		background: #f6e6e6;
+		border-radius: 19px;
+		height: 103%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 64%;
+		font-family: "Droid Serif";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2em;
+		line-height: 30px;
+		text-align: center;
+
+		color: #000000;
+	}
+}
