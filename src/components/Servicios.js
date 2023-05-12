@@ -1,5 +1,6 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
+import Contacto from "./Contacto";
 
 const Servicios = () => {
 	const navigate = useNavigate();
@@ -33,6 +34,7 @@ const Servicios = () => {
 				</div>
 				<div className="servicios_recuadro">Anuncios</div>
 			</section>
+			<Contacto />
 		</div>
 	);
 };
