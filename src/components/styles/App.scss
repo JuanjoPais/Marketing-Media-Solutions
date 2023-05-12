@@ -59,7 +59,7 @@
 	align-content: center;
 	&_section2 {
 		position: absolute;
-		width: 1651px;
+		width: 100%;
 		align-items: center;
 		left: 134px;
 		top: 432px;
@@ -125,12 +125,13 @@
 		display: flex;
 		box-sizing: border-box;
 		width: 643px;
+
 		height: 803.75px;
 		left: 105px;
 		top: 140px;
-		border: 15px solid #fdd9d9;
-		border-radius: 321.5px;
-		align-items: center;
+		//border: 15px solid #fdd9d9;
+		//border-radius: 321.5px;
+		//align-items: center;
 		img {
 			animation-name: animation1;
 			animation-duration: 2s;
