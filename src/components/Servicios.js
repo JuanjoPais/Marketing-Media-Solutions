@@ -26,13 +26,17 @@ const Servicios = () => {
 					<br />
 					Manager
 				</div>
-				<div className="servicios_recuadro" id="frame2">Asesorías</div>
+				<div className="servicios_recuadro" id="frame2">
+					Asesorías
+				</div>
 				<div className="servicios_recuadro" id="frame3">
 					Manual de
 					<br />
 					marca
 				</div>
-				<div className="servicios_recuadro" id="frame4">Anuncios</div>
+				<div className="servicios_recuadro" id="frame4">
+					Anuncios
+				</div>
 			</section>
 			<Contacto />
 		</div>
