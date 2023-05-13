@@ -1,8 +1,10 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
 import Contacto from "./Contacto";
+import {useState} from "react";
 
 const Servicios = () => {
+	const [texto, setTexto] = useState("Community Manager");
 	const navigate = useNavigate();
 	const onMouseWheel = (e) => {
 		if (e.deltaY > 0) {
@@ -11,9 +13,25 @@ const Servicios = () => {
 			navigate("/main");
 		}
 	};
-	const hoverRecuadro_1 = () => {
-		return <p>hola</p>;
+	const handleMouseOver = () => {
+		setTexto(
+			<ul className="servicios_textoHover">
+				<li className="servicios_itemsHover">
+					Calendarios semanales y mensuales
+				</li>
+				<li className="servicios_itemsHover">Optimizo biografías</li>
+				<li className="servicios_itemsHover">Formación de comunidades</li>
+				<li className="servicios_itemsHover">
+					Posteos, historias interactivas, reels y carruseles
+				</li>
+			</ul>
+		);
 	};
+
+	const handleMouseLeave = () => {
+		setTexto("Community Manager");
+	};
+
 	return (
 		<div class="servicios" onWheel={onMouseWheel}>
 			<h2 className="servicios_titulo">Servicios</h2>
@@ -25,13 +43,12 @@ const Servicios = () => {
 			</p>
 			<section className="servicios_contenedorRecuadros">
 				<div
-					onMouseOver={hoverRecuadro_1}
+					onMouseOver={handleMouseOver}
+					onMouseLeave={handleMouseLeave}
 					className="servicios_recuadro"
 					id="frame1"
 				>
-					Comunnity
-					<br />
-					Manager
+					{texto}
 				</div>
 				<div className="servicios_recuadro" id="frame2">
 					Asesorías

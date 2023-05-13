@@ -11,7 +11,7 @@
 .nav {
 	display: flex;
 	padding: 3% 10% 0 6%;
-	width: 100%;
+	width: 100vh;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -32,7 +32,7 @@
 		//padding: 1em;
 		margin-left: 2em;
 		align-content: flex-end;
-		width: 100%;
+		width: 100vh;
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -55,14 +55,14 @@
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 100%;
+	width: 100vh;
 	align-content: center;
 	&_section2 {
 		position: absolute;
-		width: 1651px;
+		width: 110em;
 		align-items: center;
-		left: 134px;
-		top: 432px;
+		left: 100px;
+		top: 270px;
 	}
 
 	&_title {
@@ -125,12 +125,13 @@
 		display: flex;
 		box-sizing: border-box;
 		width: 643px;
+
 		height: 803.75px;
 		left: 105px;
 		top: 140px;
-		border: 15px solid #fdd9d9;
-		border-radius: 321.5px;
-		align-items: center;
+		//border: 15px solid #fdd9d9;
+		//border-radius: 321.5px;
+		//align-items: center;
 		img {
 			animation-name: animation1;
 			animation-duration: 2s;
@@ -163,6 +164,99 @@
 	}
 }
 
+.servicios {
+	height: 150vh;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 0.5%;
+	&_titulo {
+		font-family: "Droid Serif";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 183.64%;
+		letter-spacing: 0.25em;
+	}
+	&_texto {
+		width: 75%;
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 36px;
+		line-height: 44px;
+		text-align: center;
+		color: #000000;
+		margin-top: -2%;
+	}
+	&_marca {
+		color: #ed8c8c;
+		font-weight: 700;
+	}
+	&_contenedorRecuadros {
+		margin-left: 50%;
+		margin-right: 50%;
+		width: 100vh;
+		height: 100vh;
+		display: grid;
+		justify-content: center;
+		grid-template-columns: 50% 50%;
+		grid-template-rows: 50% 50%;
+
+		justify-items: center;
+		column-gap: 20%;
+		row-gap: 15%;
+	}
+	&_recuadro {
+		background: #f6e6e6;
+		border-radius: 19px;
+		height: 103%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 114%;
+		font-family: "Droid Serif";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 2em;
+		line-height: 30px;
+		margin: auto;
+		text-align: center;
+		box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.75);
+
+		color: #000000;
+	}
+	&_textoHover {
+		display: flex;
+		flex-direction: column;
+		font-size: 0.5em;
+		align-items: flex-start;
+		justify-content: space-evenly;
+		line-height: inherit;
+		height: 80%;
+		width: 100%;
+		padding: 20%;
+	}
+	&itemsHover {
+		font-size: 50%;
+	}
+}
+#frame1,
+#frame2 {
+	animation-name: animation3-1;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+#frame3,
+#frame4 {
+	animation-name: animation3-2;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+
+//ANIMATIONS
 @keyframes animation1 {
 	0% {
 		transform: translateX(-100%);
@@ -176,6 +270,27 @@
 		transform: translateY(-100%);
 	}
 	100% {
+		transform: translateY(0%);
+	}
+}
+@keyframes animation3-1 {
+	0% {
+		transform: translateX(-25%);
+		transform: translateY(+25%);
+	}
+	100% {
+		transform: translateX(0%);
+		transform: translateY(0%);
+	}
+}
+
+@keyframes animation3-2 {
+	0% {
+		transform: translateX(-25%);
+		transform: translateY(-25%);
+	}
+	100% {
+		transform: translateX(0%);
 		transform: translateY(0%);
 	}
 }
