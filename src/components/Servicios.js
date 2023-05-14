@@ -87,7 +87,7 @@ const Servicios = () => {
 	};
 	const handleMouseLeaveFrame2 = () => {
 		setIsHovered2(false);
-		setTexto2("Asesorias");
+		setTexto2("Asesorías");
 	};
 
 	const handleMouseOverFrame3 = () => {
@@ -113,7 +113,7 @@ const Servicios = () => {
 	};
 	const handleMouseLeaveFrame4 = () => {
 		setIsHovered4(false);
-		setTexto4("Manual de marca");
+		setTexto4("Anuncios");
 	};
 
 	return (

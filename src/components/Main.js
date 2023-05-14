@@ -20,7 +20,7 @@ const Main = () => {
 				</article>
 			</section>
 			<section>
-				<article class="sobreMi_title">¿Quién Soy?</article>
+				<article class="sobreMi_title">¿Quién soy?</article>
 				<article class="sobreMi_text">
 					¡Hola! Soy Sofía Sosa y cuento con experiencia en la gestión de redes
 					sociales y marketing digital.
