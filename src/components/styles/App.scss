@@ -165,7 +165,7 @@
 }
 
 .servicios {
-	height: 150vh;
+	height: 100vh;
 	background-color: #f7f7f7;
 	display: flex;
 	flex-direction: column;
@@ -177,7 +177,7 @@
 		font-family: "Droid Serif";
 		font-style: normal;
 		font-weight: 700;
-		font-size: 60px;
+		font-size: 3.2em;
 		line-height: 183.64%;
 		letter-spacing: 0.25em;
 	}
@@ -186,7 +186,7 @@
 		font-family: "Montserrat";
 		font-style: normal;
 		font-weight: 400;
-		font-size: 36px;
+		font-size: 2.2em;
 		line-height: 44px;
 		text-align: center;
 		color: #000000;
@@ -200,8 +200,8 @@
 		margin-left: 50%;
 		margin-right: 50%;
 		width: 62%;
-		max-width: 80%;
-		height: 120vh;
+		max-width: 80vh;
+		height: 60vh;
 		display: grid;
 		justify-content: center;
 		grid-template-columns: 50% 50%;
@@ -232,13 +232,14 @@
 	&_textoHover {
 		display: flex;
 		flex-direction: column;
-		font-size: 0.5em;
+		font-size: 0.7em;
+		font-weight: 400;
 		align-items: flex-start;
 		justify-content: space-evenly;
 		line-height: inherit;
 		height: 80%;
 		width: 100%;
-		padding: 20%;
+		padding: 15%;
 		//FALTA AGREGAR UN EFECTO DE FADE
 	}
 	&_itemsHover {
