@@ -172,6 +172,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 0.5%;
+	width: auto;
 	&_titulo {
 		font-family: "Droid Serif";
 		font-style: normal;
@@ -198,21 +199,21 @@
 	&_contenedorRecuadros {
 		margin-left: 50%;
 		margin-right: 50%;
-		width: 100vh;
-		height: 100vh;
+		width: 70%;
+		max-width: 80%;
+		height: 120vh;
 		display: grid;
 		justify-content: center;
 		grid-template-columns: 50% 50%;
 		grid-template-rows: 50% 50%;
-
 		justify-items: center;
 		column-gap: 20%;
-		row-gap: 15%;
+		row-gap: 1%;
 	}
 	&_recuadro {
 		background: #f6e6e6;
 		border-radius: 19px;
-		height: 103%;
+		height: 83%;
 		display: flex;
 		justify-content: center;
 		align-items: center;
