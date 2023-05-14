@@ -182,7 +182,7 @@
 		letter-spacing: 0.25em;
 	}
 	&_texto {
-		width: 75%;
+		width: 77%;
 		font-family: "Montserrat";
 		font-style: normal;
 		font-weight: 400;
@@ -199,7 +199,7 @@
 	&_contenedorRecuadros {
 		margin-left: 50%;
 		margin-right: 50%;
-		width: 70%;
+		width: 62%;
 		max-width: 80%;
 		height: 120vh;
 		display: grid;
@@ -217,7 +217,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		width: 114%;
+		width: 100%;
 		font-family: "Droid Serif";
 		font-style: normal;
 		font-weight: 700;
@@ -240,8 +240,8 @@
 		width: 100%;
 		padding: 20%;
 	}
-	&itemsHover {
-		font-size: 50%;
+	&_itemsHover {
+		text-align: justify;
 	}
 }
 #frame1,
