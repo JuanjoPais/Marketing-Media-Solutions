@@ -61,24 +61,35 @@
 	height: 100vh;
 	width: 100%;
 	align-content: center;
+	justify-content: space-around;
+
 	&_section2 {
+		display: flex;
 		width: 100%;
 		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
 	}
 
 	&_title {
 		font-family: "Droid Serif";
 		font-weight: 700;
-		font-size: 96px;
-		padding: 20px;
+		font-size: 5em;
+
 		animation-name: animation2;
 		animation-duration: 3s;
 		animation-iteration-count: 1;
+		text-align: center;
+		width: max-content;
 	}
 	&_text {
 		font-family: "Montserrat", sans-serif;
-		font-size: 48px;
-		padding: 20px;
+		font-size: 2em;
+		padding-left: 4%;
+		padding-right: 4%;
+
+		font-weight: 400;
+		text-align: center;
 	}
 }
 .Contacto {
