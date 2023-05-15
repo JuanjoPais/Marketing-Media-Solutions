@@ -10,8 +10,9 @@
 }
 .nav {
 	display: flex;
-	padding: 3% 10% 0 6%;
-	width: 100vh;
+	//padding: 3% 10% 0 6%;
+	width: 100%;
+	justify-content: space-around;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -19,20 +20,19 @@
 		line-height: 7px;
 		color: #ed8c8c;
 		font-weight: 700;
-		font-size: 40px;
+		font-size: 2.2em;
 		//padding: 1em;
 	}
 	&_subtituloLogo {
 		width: max-content;
-		font-size: 30px;
+		font-size: 0.8em;
 	}
 	&_nav {
 		font-family: "Montserrat", sans-serif;
-		font-size: 30px;
-		//padding: 1em;
-		margin-left: 2em;
+		font-size: 1.5em;
+
 		align-content: flex-end;
-		width: 100vh;
+		width: auto;
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -44,8 +44,12 @@
 				align-items: center;
 				padding: 0.2em 0.7em;
 				width: max-content;
+				color: #000000;
 			}
 		}
+	}
+	&_link {
+		padding: 0 1% 0 1%;
 	}
 }
 .header {
@@ -55,14 +59,11 @@
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 100vh;
+	width: 100%;
 	align-content: center;
 	&_section2 {
-		position: absolute;
-		width: 110em;
+		width: 100%;
 		align-items: center;
-		left: 100px;
-		top: 270px;
 	}
 
 	&_title {

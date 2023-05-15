@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	width: auto;
 	box-sizing: border-box;
 	font: inherit;
 	vertical-align: baseline;
