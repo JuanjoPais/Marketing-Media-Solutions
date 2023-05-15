@@ -12,7 +12,7 @@ const Proyectos = () => {
 	};
 	return (
 		<div className="proyectos" onWheel={onMouseWheel}>
-			Proyectos
+			<h2 className="proyectos_titulo">Proyectos</h2>
 		</div>
 	);
 };
