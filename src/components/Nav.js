@@ -1,6 +1,6 @@
 import React from "react";
 import Contacto from "./Contacto";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Nav = () => {
 	return (
@@ -11,10 +11,18 @@ const Nav = () => {
 			</section>
 			<section class="nav_nav">
 				<ul>
-					<Link to="/main"><li>¿QUIEN SOY?</li></Link>
-					<Link to="/servicios"><li>SERVICIOS</li></Link>
-					<Link to="/proyectos"><li>PROYECTOS</li></Link>
-					<Link to="/footer"><li>CONTACTO</li></Link>
+					<Link to="/main" className="nav_link">
+						<li>¿QUIEN SOY?</li>
+					</Link>
+					<Link to="/servicios" className="nav_link">
+						<li>SERVICIOS</li>
+					</Link>
+					<Link to="/proyectos" className="nav_link">
+						<li>PROYECTOS</li>
+					</Link>
+					<Link to="/footer" className="nav_link">
+						<li>CONTACTO</li>
+					</Link>
 				</ul>
 			</section>
 			<Contacto />
