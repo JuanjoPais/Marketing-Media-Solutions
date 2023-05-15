@@ -121,24 +121,26 @@
 	width: auto;
 	display: flex;
 	align-items: center;
-	&_img {
+	&_containerImg {
 		display: flex;
 		box-sizing: border-box;
-		width: 643px;
-
-		height: 803.75px;
-		left: 105px;
-		top: 140px;
-		//border: 15px solid #fdd9d9;
-		//border-radius: 321.5px;
-		//align-items: center;
-		img {
-			animation-name: animation1;
-			animation-duration: 2s;
-			animation-iteration-count: 1;
-		}
+		width: 35%;
+		height: 90%;
+		background-image: url("../fotoSofia.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-left: 1%;
+		animation-name: animation1;
+		animation-duration: 2s;
+		animation-iteration-count: 1;
+	}
+	&_containerText {
+		width: 65%;
+		margin-right: 1%;
 	}
 	&_title {
+		width: 100%;
 		font-family: Droid Serif;
 		font-size: 60px;
 		font-weight: 700;
@@ -151,6 +153,7 @@
 		animation-iteration-count: 1;
 	}
 	&_text {
+		width: 100%;
 		font-family: "Montserrat", sans-serif;
 		font-size: 42px;
 		font-weight: 400;

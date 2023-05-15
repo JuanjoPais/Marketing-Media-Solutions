@@ -1,7 +1,6 @@
 import React from "react";
 import Contacto from "./Contacto";
 import {useNavigate} from "react-router-dom";
-import fotoSofia from "./fotoSofia.png";
 
 const Main = () => {
 	const navigate = useNavigate();
@@ -14,12 +13,8 @@ const Main = () => {
 	};
 	return (
 		<div class="sobreMi" onWheel={onMouseWheel}>
-			<section class="sobreMi_img">
-				<article>
-					<img src={fotoSofia} alt="" />
-				</article>
-			</section>
-			<section>
+			<section className="sobreMi_containerImg"></section>
+			<section className="sobreMi_containerText">
 				<article class="sobreMi_title">¿Quién soy?</article>
 				<article class="sobreMi_text">
 					¡Hola! Soy Sofía Sosa y cuento con experiencia en la gestión de redes
