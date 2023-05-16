@@ -7,7 +7,7 @@ const Slider = () => {
 			<motion.div
 				className="slider_container"
 				drag="x"
-				dragConstraints={{right: 0, left: -1350}} //esto hay q verlo para ajustarlo  a los saltos de pantalla
+				dragConstraints={{right: 0, left: -1550}} //esto hay q verlo para ajustarlo  a los saltos de pantalla
 			>
 				{images.map((image) => (
 					<motion.div className="slider_item">
