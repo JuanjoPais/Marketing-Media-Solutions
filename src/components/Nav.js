@@ -1,7 +1,6 @@
 import React from "react";
 import Contacto from "./Contacto";
 
-
 const Nav = () => {
 	return (
 		<div class="nav">
@@ -14,7 +13,7 @@ const Nav = () => {
 					<li>¿QUIEN SOY?</li>
 					<li>SERVICIOS</li>
 					<li>PROYECTOS</li>
-					<li>CONTACTO</li>	
+					<li>CONTACTO</li>
 				</ul>
 			</section>
 			<Contacto />

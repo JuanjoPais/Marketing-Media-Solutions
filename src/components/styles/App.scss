@@ -11,8 +11,12 @@
 .nav {
 	display: flex;
 	//padding: 3% 10% 0 6%;
-	width: 100vw;
-	justify-content: space-around;
+	width: 100%;
+	justify-content: center;
+	margin: 1% 5% 0 8%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -28,11 +32,13 @@
 		font-size: 0.8em;
 	}
 	&_nav {
+		display: flex;
 		font-family: "Montserrat", sans-serif;
 		font-size: 1.5em;
 
-		align-content: flex-end;
-		width: auto;
+		justify-content: center;
+		width: 100%;
+
 		ul {
 			display: flex;
 			flex-direction: row;
@@ -61,7 +67,7 @@
 	height: 100vh;
 	width: 100vw;
 	align-content: center;
-	justify-content: space-around;
+	justify-content: center;
 
 	&_section2 {
 		display: flex;
@@ -108,7 +114,6 @@
 		text-align: center;
 		letter-spacing: 0.1em;
 	}
-	
 
 	img {
 		width: 38px;
@@ -134,7 +139,6 @@
 		height: 100%;
 		width: 100%;
 		object-fit: fill;
-		
 	}
 	&_containerText {
 		width: 65%;
@@ -150,7 +154,6 @@
 		letter-spacing: 0em;
 		text-align: center;
 		padding: 10px;
-		
 	}
 	&_text {
 		width: 100%;
@@ -161,7 +164,6 @@
 		letter-spacing: 0em;
 		text-align: center;
 		padding: 10px;
-		
 	}
 }
 
@@ -249,7 +251,6 @@
 	}
 }
 
-
 .proyectos {
 	display: flex;
 	flex-direction: column;
@@ -291,5 +292,3 @@
 		}
 	}
 }
-
-

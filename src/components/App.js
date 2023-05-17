@@ -6,15 +6,15 @@ import Servicios from "./Servicios";
 import Proyectos from "./Proyectos";
 
 function App() {
-  return (
-    <>
-      <Header/>
-      <Main/>
-      <Servicios/>
-      <Proyectos/>
-      <Footer/>
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Main id="quienSoy" />
+			<Servicios id="servicios" />
+			<Proyectos id="proyectos" />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
