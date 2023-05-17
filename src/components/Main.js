@@ -1,19 +1,12 @@
 import React from "react";
 import Contacto from "./Contacto";
-import {useNavigate} from "react-router-dom";
 import fotoSofia from "./fotoSofia.png";
 
 const Main = () => {
-	const navigate = useNavigate();
-	const onMouseWheel = (e) => {
-		if (e.deltaY > 0) {
-			navigate("/servicios");
-		} else {
-			navigate("/");
-		}
-	};
+	
+	
 	return (
-		<div class="sobreMi" onWheel={onMouseWheel}>
+		<div class="sobreMi" >
 			<section className="sobreMi_containerImg">
 				<img
 					className="sobreMi_divImg"

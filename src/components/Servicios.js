@@ -1,5 +1,5 @@
 import React from "react";
-import {useNavigate} from "react-router-dom";
+
 import Contacto from "./Contacto";
 import {useState} from "react";
 
@@ -40,14 +40,7 @@ const Servicios = () => {
 		transition: "transform 0.5s ease",
 	};
 
-	const navigate = useNavigate();
-	const onMouseWheel = (e) => {
-		if (e.deltaY > 0) {
-			navigate("/proyectos");
-		} else {
-			navigate("/main");
-		}
-	};
+	
 
 	const handleMouseOverFrame1 = () => {
 		setIsHovered1(true);
@@ -117,7 +110,7 @@ const Servicios = () => {
 	};
 
 	return (
-		<div class="servicios" onWheel={onMouseWheel}>
+		<div class="servicios" >
 			<h2 className="servicios_titulo">Servicios</h2>
 			<p className="servicios_texto">
 				En <span className="servicios_marca">Marketing Media Solutions</span>,

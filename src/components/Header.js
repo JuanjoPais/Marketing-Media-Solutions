@@ -1,16 +1,11 @@
 import React from "react";
 import Nav from "./Nav";
-import {useNavigate} from "react-router-dom";
+
 
 const Header = () => {
-	const navigate = useNavigate();
-	const onMouseWheel = (e) => {
-		if (e.deltaY > 0) {
-			navigate("/main");
-		}
-	};
+	
 	return (
-		<div class="header" onWheel={onMouseWheel}>
+		<div class="header" >
 			<Nav />
 			<section class="header_section2">
 				<h1 class="header_title">Quiero potenciar tu crecimiento</h1>

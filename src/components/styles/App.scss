@@ -6,12 +6,12 @@
 .App {
 	display: flex;
 	flex-direction: column;
-	width: 100vh;
+	width: 100vw;
 }
 .nav {
 	display: flex;
 	//padding: 3% 10% 0 6%;
-	width: 100%;
+	width: 100vw;
 	justify-content: space-around;
 
 	&_logo {
@@ -59,7 +59,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 100%;
+	width: 100vw;
 	align-content: center;
 	justify-content: space-around;
 
@@ -75,10 +75,6 @@
 		font-family: "Droid Serif";
 		font-weight: 700;
 		font-size: 5em;
-
-		animation-name: animation2;
-		animation-duration: 3s;
-		animation-iteration-count: 1;
 		text-align: center;
 		width: max-content;
 	}
@@ -96,31 +92,23 @@
 	position: fixed;
 	font-family: "IBM Plex Mono", monospace;
 	display: flex;
-	font-size: 24px;
+	font-size: 1.4rem;
 	align-items: center;
 	padding: 0px 0px 0px 14px;
-	width: 50px;
-	height: 58px;
+	width: 15em;
+	height: 2.5em;
 	border-radius: 69px;
 	background-color: #89c051;
 	color: #ffffff;
 	gap: 14px;
-	transition: ease 0.35s;
 	bottom: 5%;
 	left: 75%;
 
 	p {
 		text-align: center;
 		letter-spacing: 0.1em;
-		overflow: hidden;
-		display: none;
 	}
-	&:hover {
-		width: 377px;
-		p {
-			display: flex;
-		}
-	}
+	
 
 	img {
 		width: 38px;
@@ -146,9 +134,7 @@
 		height: 100%;
 		width: 100%;
 		object-fit: fill;
-		animation-name: animation1;
-		animation-duration: 2s;
-		animation-iteration-count: 1;
+		
 	}
 	&_containerText {
 		width: 65%;
@@ -164,9 +150,7 @@
 		letter-spacing: 0em;
 		text-align: center;
 		padding: 10px;
-		animation-name: animation2;
-		animation-duration: 2s;
-		animation-iteration-count: 1;
+		
 	}
 	&_text {
 		width: 100%;
@@ -177,9 +161,7 @@
 		letter-spacing: 0em;
 		text-align: center;
 		padding: 10px;
-		animation-name: animation2;
-		animation-duration: 2s;
-		animation-iteration-count: 1;
+		
 	}
 }
 
@@ -241,7 +223,7 @@
 		font-family: "Droid Serif";
 		font-style: normal;
 		font-weight: 700;
-		font-size: 112%;
+		font-size: 1.12em;
 		line-height: 20px;
 		margin: auto;
 		text-align: center;
@@ -266,18 +248,7 @@
 		text-align: justify;
 	}
 }
-#frame1,
-#frame2 {
-	animation-name: animation3-1;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-}
-#frame3,
-#frame4 {
-	animation-name: animation3-2;
-	animation-duration: 2s;
-	animation-iteration-count: 1;
-}
+
 
 .proyectos {
 	display: flex;
@@ -321,41 +292,4 @@
 	}
 }
 
-//ANIMATIONS
-@keyframes animation1 {
-	0% {
-		transform: translateX(-100%);
-	}
-	100% {
-		transform: translateX(0%);
-	}
-}
-@keyframes animation2 {
-	0% {
-		transform: translateY(-100%);
-	}
-	100% {
-		transform: translateY(0%);
-	}
-}
-@keyframes animation3-1 {
-	0% {
-		transform: translateX(-25%);
-		transform: translateY(+25%);
-	}
-	100% {
-		transform: translateX(0%);
-		transform: translateY(0%);
-	}
-}
 
-@keyframes animation3-2 {
-	0% {
-		transform: translateX(-25%);
-		transform: translateY(-25%);
-	}
-	100% {
-		transform: translateX(0%);
-		transform: translateY(0%);
-	}
-}
