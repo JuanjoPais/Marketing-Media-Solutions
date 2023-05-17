@@ -9,9 +9,16 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Main id="quienSoy" />
-			<Servicios id="servicios" />
-			<Proyectos id="proyectos" />
+			<div id="quienSoy">
+				<Main />
+			</div>
+			<div id="servicios">
+				<Servicios />
+			</div>
+			<div id="proyectos">
+				<Proyectos />
+			</div>
+
 			<Footer />
 		</>
 	);

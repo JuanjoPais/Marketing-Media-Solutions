@@ -10,13 +10,14 @@
 }
 .nav {
 	display: flex;
-	//padding: 3% 10% 0 6%;
 	width: 100%;
 	justify-content: center;
-	margin: 1% 5% 0 8%;
+	//margin: 0% 0% 1% 0%;
 	position: fixed;
 	top: 0;
 	z-index: 999;
+	padding-top: 2%;
+	background-color: #f6e6e6;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -25,7 +26,7 @@
 		color: #ed8c8c;
 		font-weight: 700;
 		font-size: 2.2em;
-		//padding: 1em;
+		padding-left: 7%;
 	}
 	&_subtituloLogo {
 		width: max-content;
@@ -35,7 +36,7 @@
 		display: flex;
 		font-family: "Montserrat", sans-serif;
 		font-size: 1.5em;
-
+		padding-right: 0%;
 		justify-content: center;
 		width: 100%;
 
@@ -48,7 +49,7 @@
 			li {
 				display: inline-block;
 				align-items: center;
-				padding: 0.2em 0.7em;
+				padding: 0.2em 1.2em;
 				width: max-content;
 				color: #000000;
 			}
@@ -83,13 +84,14 @@
 		font-size: 5em;
 		text-align: center;
 		width: max-content;
+		padding-top: 10%;
 	}
 	&_text {
 		font-family: "Montserrat", sans-serif;
 		font-size: 2em;
 		padding-left: 4%;
 		padding-right: 4%;
-
+		margin-top: -1%;
 		font-weight: 400;
 		text-align: center;
 	}
