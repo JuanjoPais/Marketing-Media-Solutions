@@ -5,7 +5,7 @@ import {useState} from "react";
 
 const Servicios = () => {
 	const [texto1, setTexto1] = useState("Community Manager");
-	const [texto2, setTexto2] = useState("Asesorias");
+	const [texto2, setTexto2] = useState("Asesorías");
 	const [texto3, setTexto3] = useState("Manual de marca");
 	const [texto4, setTexto4] = useState("Anuncios");
 
@@ -39,8 +39,6 @@ const Servicios = () => {
 		transformOrigin: "top left",
 		transition: "transform 0.5s ease",
 	};
-
-	
 
 	const handleMouseOverFrame1 = () => {
 		setIsHovered1(true);
@@ -110,7 +108,7 @@ const Servicios = () => {
 	};
 
 	return (
-		<div class="servicios" >
+		<div class="servicios">
 			<h2 className="servicios_titulo">Servicios</h2>
 			<p className="servicios_texto">
 				En <span className="servicios_marca">Marketing Media Solutions</span>,
