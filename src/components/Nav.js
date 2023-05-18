@@ -1,5 +1,6 @@
 import React from "react";
 import Contacto from "./Contacto";
+import {Link} from "react-scroll";
 
 const Nav = () => {
 	return (
@@ -10,9 +11,42 @@ const Nav = () => {
 			</section>
 			<section class="nav_nav">
 				<ul>
-					<li>¿QUIEN SOY?</li>
-					<li>SERVICIOS</li>
-					<li>PROYECTOS</li>
+					<li>
+						<Link
+							activeClass="active"
+							to="quienSoy"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+						>
+							¿QUIEN SOY?
+						</Link>
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							to="servicios"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={500}
+						>
+							SERVICIOS
+						</Link>
+					</li>
+					<li>
+						<Link
+							activeClass="active"
+							to="proyectos"
+							spy={false}
+							smooth={true}
+							offset={-50}
+							duration={500}
+						>
+							PROYECTOS
+						</Link>
+					</li>
 					<li>CONTACTO</li>
 				</ul>
 			</section>
