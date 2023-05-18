@@ -12,12 +12,11 @@
 	display: flex;
 	width: 100%;
 	justify-content: center;
-	//margin: 0% 0% 1% 0%;
+
 	position: fixed;
 	top: 0;
 	z-index: 999;
 	padding-top: 2%;
-	background-color: #f6e6e6;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -60,7 +59,7 @@
 	}
 }
 .header {
-	//background-image: url("../../../public/vecteezy_abstract-art-gold-tropical-leaves-background-vector-luxury_14041525.jpg");
+	background-image: url("../abstract-art-\ 1.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
@@ -99,18 +98,20 @@
 .Contacto {
 	position: fixed;
 	font-family: "IBM Plex Mono", monospace;
+	font-style: normal;
 	display: flex;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
+	font-weight: 400;
 	align-items: center;
-	padding: 0px 0px 0px 14px;
+	padding: 0 0 0 1%;
 	width: 15em;
-	height: 2.5em;
+	height: 48px;
 	border-radius: 69px;
 	background-color: #89c051;
 	color: #ffffff;
 	gap: 14px;
-	bottom: 5%;
-	left: 75%;
+	bottom: 1%;
+	left: 78%;
 
 	p {
 		text-align: center;
