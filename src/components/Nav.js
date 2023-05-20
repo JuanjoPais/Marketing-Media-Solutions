@@ -46,7 +46,16 @@ const Nav = () => {
 							PROYECTOS
 						</Link>
 					</li>
-					<li>CONTACTO</li>
+					<li><Link
+							activeClass="active"
+							to="footer"
+							spy={false}
+							smooth={true}
+							offset={-50}
+							duration={500}
+						>
+							CONTACTO
+						</Link></li>
 				</ul>
 			</section>
 		</div>
