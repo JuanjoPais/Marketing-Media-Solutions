@@ -1,5 +1,4 @@
 import React from "react";
-import Contacto from "./Contacto";
 import {Link} from "react-scroll";
 
 const Nav = () => {
@@ -50,7 +49,6 @@ const Nav = () => {
 					<li>CONTACTO</li>
 				</ul>
 			</section>
-			<Contacto />
 		</div>
 	);
 };

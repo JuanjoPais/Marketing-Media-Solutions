@@ -11,13 +11,14 @@
 }
 .nav {
 	display: flex;
-	width: 100%;
-	justify-content: center;
-
+	width: 100vw;
+	justify-content: space-between;
 	position: fixed;
 	top: 0;
 	z-index: 999;
 	padding-top: 2%;
+	background: rgba(253, 217, 217,.5);
+	align-content: center;
 
 	&_logo {
 		font-family: "Droid Serif";
@@ -38,7 +39,7 @@
 		font-size: 1.5em;
 		padding-right: 0%;
 		justify-content: center;
-		width: 100%;
+		margin-right: 2vw;
 		
 
 		ul {
