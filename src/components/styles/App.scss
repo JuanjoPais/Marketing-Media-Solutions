@@ -6,9 +6,13 @@
 .App {
 	display: flex;
 	flex-direction: column;
-	width: 100vw;
-	overflow-x: hidden;
+	width: auto;
+	overflow-x:hidden;	
 }
+body::-webkit-scrollbar{
+	display: none;
+   }
+
 .nav {
 	display: flex;
 	width: 100vw;
@@ -37,7 +41,6 @@
 		display: flex;
 		font-family: "Montserrat", sans-serif;
 		font-size: 1.5em;
-		padding-right: 0%;
 		justify-content: center;
 		margin-right: 2vw;
 		
@@ -79,7 +82,7 @@
 
 	&_section2 {
 		display: flex;
-		width: 100%;
+		width: 100vw;
 		align-items: center;
 		flex-direction: column;
 		justify-content: space-around;
@@ -90,7 +93,7 @@
 		font-weight: 700;
 		font-size: 5em;
 		text-align: center;
-		width: max-content;
+		width: auto;
 		padding-top: 10%;
 	}
 	&_text {
@@ -112,8 +115,8 @@
 	font-weight: 400;
 	align-items: center;
 	padding: 0 0 0 1%;
-	width: 15em;
-	height: 48px;
+	width: 18vw;
+	height: 5vh;
 	border-radius: 69px;
 	background-color: #89c051;
 	color: #ffffff;
