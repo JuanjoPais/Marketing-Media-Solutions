@@ -1,5 +1,4 @@
 import React from "react";
-import Contacto from "./Contacto";
 import {Link} from "react-scroll";
 
 const Nav = () => {
@@ -47,10 +46,18 @@ const Nav = () => {
 							PROYECTOS
 						</Link>
 					</li>
-					<li>CONTACTO</li>
+					<li><Link
+							activeClass="active"
+							to="footer"
+							spy={false}
+							smooth={true}
+							offset={-50}
+							duration={500}
+						>
+							CONTACTO
+						</Link></li>
 				</ul>
 			</section>
-			<Contacto />
 		</div>
 	);
 };
