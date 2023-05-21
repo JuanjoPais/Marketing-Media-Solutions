@@ -1,4 +1,5 @@
 import React from "react";
+import {useState} from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -18,6 +19,104 @@ import img5 from "./fotosCarousel/5.png";
 import img6 from "./fotosCarousel/6.png";
 
 const Proyectos = () => {
+	const [contenidoSlide1, setContenidoSlide1] = useState(
+		<img src={img1} alt="foto de carousel" />
+	);
+	const [contenidoSlide2, setContenidoSlide2] = useState(
+		<img src={img2} alt="foto de carousel" />
+	);
+	const [contenidoSlide3, setContenidoSlide3] = useState(
+		<img src={img3} alt="foto de carousel" />
+	);
+	const [contenidoSlide4, setContenidoSlide4] = useState(
+		<img src={img4} alt="foto de carousel" />
+	);
+	const [contenidoSlide5, setContenidoSlide5] = useState(
+		<img src={img5} alt="foto de carousel" />
+	);
+	const [contenidoSlide6, setContenidoSlide6] = useState(
+		<img src={img6} alt="foto de carousel" />
+	);
+
+	const handleMouseOverSlide1 = () => {
+		return setContenidoSlide1(
+			<p className="proyectos_textoHover">
+				Colaboré con Patricia Sosa en su portada para representarla en la
+				promoción de "Mundo sin violencia" utilizando estrategias de marketing
+				digital y gestión de redes sociales.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide1 = () => {
+		setContenidoSlide1(<img src={img1} alt="foto de carousel" />);
+	};
+
+	const handleMouseOverSlide2 = () => {
+		return setContenidoSlide2(
+			<p className="proyectos_textoHover">
+				El objetivo es promocionar el nuevo estudio Dolby Atmos de Oscar
+				Mediavilla, aumentando visibilidad, interés en línea y destacando
+				ventajas mediante canales digitales.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide2 = () => {
+		setContenidoSlide2(<img src={img2} alt="foto de carousel" />);
+	};
+	const handleMouseOverSlide3 = () => {
+		return setContenidoSlide3(
+			<p className="proyectos_textoHover">
+				Diseñe un folleto promocional para el centro de masajes "Reflex" con el
+				propósito de atraer clientes y aumentar la visibilidad de los servicios
+				mediante promociones destacadas.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide3 = () => {
+		setContenidoSlide3(<img src={img3} alt="foto de carousel" />);
+	};
+	const handleMouseOverSlide4 = () => {
+		return setContenidoSlide4(
+			<p className="proyectos_textoHover">
+				Armado de manual de marca y logo para que represente una marca con
+				fuerza, seducción y sensualidad.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide4 = () => {
+		setContenidoSlide4(<img src={img4} alt="foto de carousel" />);
+	};
+	const handleMouseOverSlide5 = () => {
+		return setContenidoSlide5(
+			<p className="proyectos_textoHover">
+				Promoción de solución oftálmica para animales siguiendo el manual de
+				marca, asegurando coherencia visual y transmitiendo mensajes clave en
+				canales en línea y offline.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide5 = () => {
+		setContenidoSlide5(<img src={img5} alt="foto de carousel" />);
+	};
+	const handleMouseOverSlide6 = () => {
+		return setContenidoSlide6(
+			<p className="proyectos_textoHover">
+				Demostramos que todo lo que buscas para armar tu living o tu hogar lo
+				encontras en un solo lugar. Priorizando los colores de marca ya elegidos
+				para diferenciarse de la competencia.
+			</p>
+		);
+	};
+
+	const handleMouseLeaveSlide6 = () => {
+		setContenidoSlide6(<img src={img6} alt="foto de carousel" />);
+	};
+
 	return (
 		<div className="proyectos">
 			<div>
@@ -27,7 +126,7 @@ const Proyectos = () => {
 				grabCursor={true}
 				centeredSlides={false}
 				loop={true}
-				slidesPerView={"3"}
+				slidesPerView={"2"}
 				navigation={{
 					nextEl: ".proyectos_swiper_button_next",
 					prevEl: ".proyectos_swiper_button_prev",
@@ -38,22 +137,58 @@ const Proyectos = () => {
 				spaceBetween={80}
 			>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img1} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide1}
+						onMouseLeave={handleMouseLeaveSlide1}
+						className="proyectos_slide"
+					>
+						{contenidoSlide1}
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img2} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide2}
+						onMouseLeave={handleMouseLeaveSlide2}
+						className="proyectos_slide"
+					>
+						{contenidoSlide2}
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img3} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide3}
+						onMouseLeave={handleMouseLeaveSlide3}
+						className="proyectos_slide"
+					>
+						{contenidoSlide3}
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img4} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide4}
+						onMouseLeave={handleMouseLeaveSlide4}
+						className="proyectos_slide"
+					>
+						{contenidoSlide4}
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img5} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide5}
+						onMouseLeave={handleMouseLeaveSlide5}
+						className="proyectos_slide"
+					>
+						{contenidoSlide5}
+					</div>
 				</SwiperSlide>
 				<SwiperSlide className="proyectos_imgContainer">
-					<img className="proyectos_slide" src={img6} alt="fotoCarousel"></img>
+					<div
+						onMouseOver={handleMouseOverSlide6}
+						onMouseLeave={handleMouseLeaveSlide6}
+						className="proyectos_slide"
+					>
+						{contenidoSlide6}
+					</div>
 				</SwiperSlide>
 			</Swiper>
 			<div>
