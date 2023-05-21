@@ -7,11 +7,11 @@
 	display: flex;
 	flex-direction: column;
 	width: auto;
-	overflow-x:hidden;	
+	overflow-x: hidden;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
 	display: none;
-   }
+}
 
 .nav {
 	display: flex;
@@ -21,7 +21,7 @@ body::-webkit-scrollbar{
 	top: 0;
 	z-index: 999;
 	padding-top: 2%;
-	background: rgba(253, 217, 217,.7);
+	background: rgba(253, 217, 217, 0.7);
 	align-content: center;
 
 	&_logo {
@@ -43,14 +43,12 @@ body::-webkit-scrollbar{
 		font-size: 1.5em;
 		justify-content: center;
 		margin-right: 2vw;
-		
 
 		ul {
 			display: flex;
 			flex-direction: row;
 			list-style: none;
 			align-content: flex-end;
-			
 
 			li {
 				display: inline-block;
@@ -58,9 +56,8 @@ body::-webkit-scrollbar{
 				padding: 0.2em 1.2em;
 				width: max-content;
 				color: #000000;
-				
 			}
-			&:hover{
+			&:hover {
 				cursor: pointer;
 			}
 		}
@@ -115,14 +112,15 @@ body::-webkit-scrollbar{
 	font-weight: 400;
 	align-items: center;
 	padding: 0 0 0 1%;
-	width: 18vw;
-	height: 5vh;
+	width: 20vw;
+	height: 6vh;
 	border-radius: 69px;
 	background-color: #89c051;
 	color: #ffffff;
 	gap: 14px;
 	bottom: 1%;
 	left: 78%;
+	z-index: 100000;
 
 	p {
 		text-align: center;
@@ -266,12 +264,11 @@ body::-webkit-scrollbar{
 }
 
 .proyectos {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	height: 100vh;
+	text-align: center;
+	max-width: 124rem;
+	padding: 4rem, 1rem;
+	margin: 0 auto;
+	position: relative;
 
 	&_titulo {
 		font-family: "Droid Serif";
@@ -280,6 +277,84 @@ body::-webkit-scrollbar{
 		font-size: 3.2em;
 		line-height: 183.64%;
 		letter-spacing: 0.25em;
+	}
+	&_swiper_container {
+		height: 52rem;
+		padding: 2rem 0;
+		margin: 0 2%;
+		position: relative;
+		margin-bottom: 5%;
+		background-color: #fdd9d9;
+	}
+	&_slide {
+		width: 108%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	@media (max-width: 500px) {
+		.proyectos_swiper_container {
+			height: 47rem;
+		}
+		.swiper-slide {
+			width: 28rem !important;
+			height: 36rem !important;
+		}
+		.swiper-slide img {
+			width: 28rem !important;
+			height: 36rem !important;
+		}
+	}
+
+	.swiper {
+		height: auto;
+		display: flex;
+		align-items: stretch;
+		padding: 0 4%;
+	}
+
+	.swiper-slide img {
+		width: 100%;
+		height: 100%;
+		margin: auto;
+		object-fit: cover;
+	}
+
+	&_swiper_button_prev {
+		position: absolute;
+		top: 50%;
+		z-index: 999;
+		width: min-content;
+		img {
+			height: 40px;
+			cursor: pointer;
+		}
+	}
+	&_swiper_button_next {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 999;
+		width: min-content;
+		img {
+			height: 40px;
+			cursor: pointer;
+		}
+	}
+}
+
+.swiper-wrapper {
+	align-items: center;
+}
+
+.swiper-slide {
+	width: 37rem;
+	height: 42rem;
+	position: relative;
+	img {
+		height: 80vh;
 	}
 }
 
@@ -307,21 +382,19 @@ body::-webkit-scrollbar{
 	}
 }
 
-.footer{
+.footer {
 	background-color: #040404;
-	color:#f7f7f7;
+	color: #f7f7f7;
 	font-family: "Montserrat";
 	font-weight: 500;
 	display: flex;
 	flex-direction: column;
 
-	&_title{
+	&_title {
 		font-size: 3.78em;
 		margin-left: 4vw;
-		
-		
 	}
-	&_subtitle{
+	&_subtitle {
 		font-size: 2.62em;
 		display: flex;
 		margin-left: 4vw;
@@ -330,29 +403,27 @@ body::-webkit-scrollbar{
 		align-items: center;
 		width: auto;
 		height: auto;
-		
-		p{
+
+		p {
 			max-width: 70vw;
 		}
-		&_enlace{
+		&_enlace {
 			color: #f7f7f7;
 		}
-		
-		
 	}
-	&_icons{
+	&_icons {
 		display: flex;
 		margin-left: 4vw;
 		margin-bottom: 3vh;
 	}
 }
-.footer2{
-	background-color: #FDD9D9;
+.footer2 {
+	background-color: #fdd9d9;
 	display: flex;
-	font-family: 'Montserrat';
+	font-family: "Montserrat";
 	font-style: normal;
 	font-size: 2.18em;
-	font-weight: 300;		
+	font-weight: 300;
 	height: 10vh;
 	letter-spacing: 0.655em;
 	text-align: center;
