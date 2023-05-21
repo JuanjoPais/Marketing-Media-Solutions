@@ -34,13 +34,13 @@ body::-webkit-scrollbar {
 		padding-left: 7%;
 	}
 	&_subtituloLogo {
-		width: max-content;
+		
 		font-size: 0.8em;
 	}
 	&_nav {
 		display: flex;
 		font-family: "Montserrat", sans-serif;
-		font-size: 1.5em;
+		font-size: 1.5rem;
 		justify-content: center;
 		margin-right: 2vw;
 
@@ -51,10 +51,8 @@ body::-webkit-scrollbar {
 			align-content: flex-end;
 
 			li {
-				display: inline-block;
 				align-items: center;
 				padding: 0.2em 1.2em;
-				width: max-content;
 				color: #000000;
 			}
 			&:hover {
@@ -62,9 +60,7 @@ body::-webkit-scrollbar {
 			}
 		}
 	}
-	&_link {
-		padding: 0 1% 0 1%;
-	}
+	
 }
 .header {
 	background-image: url("../abstract-art-\ 1.png");
@@ -159,7 +155,7 @@ body::-webkit-scrollbar {
 	}
 	&_title {
 		width: 100%;
-		font-family: Droid Serif;
+		font-family: "Droid Serif";
 		font-size: 3em;
 		font-weight: 700;
 		line-height: 70px;
