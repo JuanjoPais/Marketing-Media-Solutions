@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.png";
 import logoIG from "./igLogo.png";
+import {Link} from "react-scroll";
 
 const Footer = () => {
 	return (
@@ -22,19 +23,31 @@ const Footer = () => {
 							</a>
 						</p>
 					</article>
-					<article>
+					<Link
+						activeClass="active"
+						to="header"
+						spy={false}
+						smooth={true}
+						offset={-50}
+						duration={500}
+						style={{cursor: "pointer"}}
+					>
 						<img src={logo} alt="" />
-					</article>
+					</Link>
 				</section>
 				<section class="footer_icons">
-					<a href="https://www.instagram.com/marketingmedia.solutions/">
+					<a
+						href="https://www.instagram.com/marketingmedia.solutions/"
+						target="_blank"
+						rel="noreferrer"
+					>
 						<img src={logoIG} alt="" />
 					</a>
 				</section>
 			</div>
 			<div class="footer2">
 				<section>
-					<p>Impulsa tu presencia</p>
+					<p>Impulsá tu presencia</p>
 				</section>
 			</div>
 		</>

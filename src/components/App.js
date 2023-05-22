@@ -8,7 +8,7 @@ import Proyectos from "./Proyectos";
 function App() {
 	return (
 		<>
-			<Header />
+			<Header id="header" />
 			<div id="quienSoy">
 				<Main />
 			</div>
