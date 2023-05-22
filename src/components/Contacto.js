@@ -2,7 +2,8 @@ import React from "react";
 import Vector from "./Vector.png";
 
 const Contacto = () => {
-	const message = "Hola, estoy interesado en su servicio";
+	const message =
+		"¡Hola Marketing Media Solutions!Estoy interesado en su servicio de (detallar servicio de interés y cuál sería el proyecto a trabajar)";
 	const phone = "+5491132704760";
 
 	return (
