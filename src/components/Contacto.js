@@ -10,6 +10,7 @@ const Contacto = () => {
 			href={`https://wa.me/${phone}?text=${encodeURIComponent(message)}`}
 			target="_blank"
 			rel="noopener noreferrer"
+			className="linkWhatsApp"
 		>
 			<div class="Contacto">
 				<img src={Vector} alt="logo de WhatsApp"></img>

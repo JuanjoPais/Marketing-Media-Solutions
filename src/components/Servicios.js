@@ -1,6 +1,4 @@
 import React from "react";
-
-import Contacto from "./Contacto";
 import {useState} from "react";
 
 const Servicios = () => {
@@ -157,7 +155,6 @@ const Servicios = () => {
 					{texto4}
 				</div>
 			</section>
-			<Contacto />
 		</div>
 	);
 };

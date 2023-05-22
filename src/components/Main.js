@@ -1,12 +1,9 @@
 import React from "react";
-import Contacto from "./Contacto";
 import fotoSofia from "./fotoSofia.png";
 
 const Main = () => {
-	
-	
 	return (
-		<div class="sobreMi" >
+		<div class="sobreMi">
 			<section className="sobreMi_containerImg">
 				<img
 					className="sobreMi_divImg"
@@ -27,7 +24,6 @@ const Main = () => {
 					</p>
 				</article>
 			</section>
-			<Contacto />
 		</div>
 	);
 };

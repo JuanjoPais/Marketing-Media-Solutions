@@ -98,8 +98,12 @@ body::-webkit-scrollbar {
 		text-align: center;
 	}
 }
+
+.linkWhatsApp {
+	text-decoration: none;
+}
 .Contacto {
-	position: fixed;
+	position: sticky;
 	font-family: "IBM Plex Mono", monospace;
 	font-style: normal;
 	display: flex;
@@ -107,15 +111,16 @@ body::-webkit-scrollbar {
 	font-weight: 400;
 	align-items: center;
 	padding: 0 0 0 1%;
-	width: 20vw;
+	width: fit-content;
 	height: 6vh;
 	border-radius: 69px;
 	background-color: #89c051;
 	color: #ffffff;
 	gap: 14px;
 	bottom: 1%;
-	left: 78%;
+	left: 79%;
 	z-index: 100000;
+	margin-bottom: 0.5%;
 
 	p {
 		text-align: center;
@@ -127,6 +132,7 @@ body::-webkit-scrollbar {
 		height: 38px;
 	}
 }
+
 .sobreMi {
 	background: #ed8c8c;
 	height: 100vh;
