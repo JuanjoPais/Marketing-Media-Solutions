@@ -112,9 +112,12 @@ const Servicios = () => {
 			<h2 className="servicios_titulo">Servicios</h2>
 			<p className="servicios_texto">
 				En <span className="servicios_marca">Marketing Media Solutions</span>,
-				trabajamos en estrecha colaboración de nuestros clientes para entender
-				sus necesidades, desarrollar estrategias personalizadas y reflejar su
-				esencia única.
+				nos apasiona el éxito de nuestros clientes y nos comprometemos a
+				ayudarlos a lograr sus metas. Trabajamos en estrecha colaboración para
+				entender sus necesidades, desarrollar estrategias personalizadas y
+				reflejar su esencia única. Nos enfocamos en encontrar su voz en línea y
+				conectar con su audiencia, simplificando el proceso digital y manejando
+				todo, desde la estrategia hasta la implementación.
 			</p>
 			<section className="servicios_contenedorRecuadros">
 				<div

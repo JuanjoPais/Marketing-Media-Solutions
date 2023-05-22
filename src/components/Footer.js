@@ -7,13 +7,13 @@ const Footer = () => {
 	return (
 		<>
 			<div class="footer">
-				<section class="footer_title">
-					<p>¡Charlemos!</p>
-				</section>
-				<section class="footer_subtitle">
-					<article>
+				<div className="footer_textContainer">
+					<section class="footer_title">
+						<p>¡Charlemos!</p>
+					</section>
+					<section class="footer_subtitle">
 						<p>
-							Hagamos que tu marca crezca exponencialmente, me podes contactar
+							Hagamos que tu marca crezca exponencialmente, me podés contactar
 							también por{" "}
 							<a
 								href="mailto: marketingmedia.solutions1@gmail.com"
@@ -22,19 +22,21 @@ const Footer = () => {
 								marketingmedia.solutions1@gmail.com
 							</a>
 						</p>
-					</article>
-					<Link
-						activeClass="active"
-						to="header"
-						spy={false}
-						smooth={true}
-						offset={-50}
-						duration={500}
-						style={{cursor: "pointer"}}
-					>
-						<img src={logo} alt="" />
-					</Link>
-				</section>
+
+						<Link
+							activeClass="active"
+							to="header"
+							spy={false}
+							smooth={true}
+							offset={-50}
+							duration={500}
+							style={{cursor: "pointer"}}
+						>
+							<img src={logo} alt="" />
+						</Link>
+					</section>
+				</div>
+
 				<section class="footer_icons">
 					<a
 						href="https://www.instagram.com/marketingmedia.solutions/"
@@ -46,9 +48,7 @@ const Footer = () => {
 				</section>
 			</div>
 			<div class="footer2">
-				<section>
-					<p>Impulsá tu presencia</p>
-				</section>
+				<p>Impulsá tu presencia</p>
 			</div>
 		</>
 	);

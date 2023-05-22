@@ -46,7 +46,8 @@ const Nav = () => {
 							PROYECTOS
 						</Link>
 					</li>
-					<li><Link
+					<li>
+						<Link
 							activeClass="active"
 							to="footer"
 							spy={false}
@@ -55,7 +56,8 @@ const Nav = () => {
 							duration={500}
 						>
 							CONTACTO
-						</Link></li>
+						</Link>
+					</li>
 				</ul>
 			</section>
 		</div>

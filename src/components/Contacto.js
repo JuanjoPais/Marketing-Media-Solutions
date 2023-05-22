@@ -3,7 +3,7 @@ import Vector from "./Vector.png";
 
 const Contacto = () => {
 	const message = "Hola, estoy interesado en su servicio";
-	const phone = "+5491156975864";
+	const phone = "+5491156975864"; //CAMBIAR
 
 	return (
 		<a

@@ -34,7 +34,7 @@ body::-webkit-scrollbar {
 		padding-left: 7%;
 	}
 	&_subtituloLogo {
-		
+		width: max-content;
 		font-size: 0.8em;
 	}
 	&_nav {
@@ -60,7 +60,6 @@ body::-webkit-scrollbar {
 			}
 		}
 	}
-	
 }
 .header {
 	background-image: url("../abstract-art-\ 1.png");
@@ -176,7 +175,7 @@ body::-webkit-scrollbar {
 }
 
 .servicios {
-	height: 100vh;
+	height: 150vh;
 	background-color: #f7f7f7;
 	display: flex;
 	flex-direction: column;
@@ -191,15 +190,16 @@ body::-webkit-scrollbar {
 		font-size: 3.2em;
 		line-height: 183.64%;
 		letter-spacing: 0.25em;
+		color: #ed8c8c;
 	}
 	&_texto {
-		width: 77%;
+		width: 88%;
 		font-family: "Montserrat";
 		font-style: normal;
 		font-weight: 400;
-		font-size: 2.2em;
-		line-height: 44px;
-		text-align: center;
+		font-size: 1.5em;
+		line-height: 120%;
+		text-align: justify;
 		color: #000000;
 		margin-top: -2%;
 	}
@@ -211,14 +211,14 @@ body::-webkit-scrollbar {
 		margin-left: 50%;
 		margin-right: 50%;
 		width: 62%;
-		max-width: 80vh;
-		height: 60vh;
+		max-width: 97vw;
+		height: 100vh;
 		display: grid;
 		justify-content: center;
 		grid-template-columns: 50% 50%;
 		grid-template-rows: 50% 50%;
 		justify-items: center;
-		column-gap: 20%;
+		column-gap: 15%;
 		row-gap: 1%;
 		padding-bottom: 3%;
 	}
@@ -233,7 +233,7 @@ body::-webkit-scrollbar {
 		font-family: "Droid Serif";
 		font-style: normal;
 		font-weight: 700;
-		font-size: 1.12em;
+		font-size: 1.5em;
 		line-height: 20px;
 		margin: auto;
 		text-align: center;
@@ -244,18 +244,18 @@ body::-webkit-scrollbar {
 	&_textoHover {
 		display: flex;
 		flex-direction: column;
-		font-size: 0.7em;
+		font-size: 1em;
 		font-weight: 400;
 		align-items: flex-start;
 		justify-content: space-evenly;
-		line-height: 15px;
+		line-height: 140%;
 		height: 80%;
 		width: 100%;
 		padding: 15%;
 		//FALTA AGREGAR UN EFECTO DE FADE
 	}
 	&_itemsHover {
-		text-align: justify;
+		text-align: left;
 	}
 }
 
@@ -273,6 +273,7 @@ body::-webkit-scrollbar {
 		font-size: 3.2em;
 		line-height: 183.64%;
 		letter-spacing: 0.25em;
+		color: #ed8c8c;
 	}
 	&_swiper_container {
 		height: 52rem;
@@ -408,13 +409,19 @@ body::-webkit-scrollbar {
 	font-weight: 500;
 	display: flex;
 	flex-direction: column;
+	padding-left: 4%;
+
+	&_textContainer {
+		display: flex;
+		flex-direction: column;
+	}
 
 	&_title {
 		font-size: 3.78em;
 		margin-left: 4vw;
 	}
 	&_subtitle {
-		font-size: 2.62em;
+		font-size: 1.8em;
 		display: flex;
 		margin-left: 4vw;
 		margin-right: 4vw;
@@ -447,4 +454,5 @@ body::-webkit-scrollbar {
 	letter-spacing: 0.655em;
 	text-align: center;
 	justify-content: center;
+	align-items: center;
 }
