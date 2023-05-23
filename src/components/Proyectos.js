@@ -125,7 +125,7 @@ const Proyectos = () => {
 			<Swiper
 				grabCursor={true}
 				centeredSlides={false}
-				loop={true}
+				loop={false}
 				slidesPerView={"2"}
 				navigation={{
 					nextEl: ".proyectos_swiper_button_next",
