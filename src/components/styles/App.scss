@@ -308,6 +308,7 @@ body::-webkit-scrollbar {
 		height: 100%;
 	}
 	&_textoHover {
+		animation: fadeIn 2s ease;
 		font-family: "Montserrat";
 		font-style: normal;
 		font-weight: 400;
@@ -321,6 +322,11 @@ body::-webkit-scrollbar {
 	}
 	.swiper-wrapper {
 		height: auto;
+	}
+	@keyframes fadeIn {
+		0% {
+			opacity: 0;
+		}
 	}
 
 	@media (max-width: 500px) {
@@ -448,6 +454,7 @@ body::-webkit-scrollbar {
 	}
 	&_icons {
 		display: flex;
+		gap: 3%;
 		margin-left: 4vw;
 		margin-bottom: 3vh;
 	}
