@@ -26,7 +26,7 @@ const Header = () => {
 				<h1 class="header_title">Quiero potenciar tu crecimiento</h1>
 				{isSmallScreen ? (
 					<h2 class="header_text">
-						Estoy aquí para ayudarte a compartir de manera efectiva la historia
+						Estoy acá para ayudarte a compartir de manera efectiva la historia
 						única de tu marca.
 					</h2>
 				) : (
