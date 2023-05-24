@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect} from "react";
-import fotoSofia from "./fotoSofia.png";
+import fotoSofia from "./images/fotoSofia.png";
 
 const Main = () => {
 	const [isSmallScreen, setIsSmallScreen] = useState(false);

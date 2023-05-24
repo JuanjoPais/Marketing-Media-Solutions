@@ -1,5 +1,5 @@
 import React from "react";
-import Vector from "./Vector.png";
+import Vector from "./images/Vector.png";
 
 const Contacto = () => {
 	const message =

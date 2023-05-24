@@ -1,6 +1,6 @@
 import React from "react";
-import logo from "./logo.png";
-import logoIG from "./igLogo.png";
+import logo from "./images/logo.png";
+import logoIG from "./images/igLogo.png";
 
 import {Link} from "react-scroll";
 

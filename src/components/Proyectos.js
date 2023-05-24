@@ -8,8 +8,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import {Navigation} from "swiper";
-import prevArrow from "./left-arrow.png";
-import nextArrow from "./right-arrow.png";
+import prevArrow from "./images/left-arrow.png";
+import nextArrow from "./images/right-arrow.png";
 
 import img1 from "./fotosCarousel/1.png";
 import img2 from "./fotosCarousel/2.png";
