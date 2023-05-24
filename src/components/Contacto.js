@@ -13,7 +13,7 @@ const Contacto = () => {
 			rel="noopener noreferrer"
 			className="linkWhatsApp"
 		>
-			<div class="Contacto">
+			<div className="Contacto">
 				<img src={Vector} alt="logo de WhatsApp"></img>
 				<p>Hola! ¿Consultas?</p>
 			</div>

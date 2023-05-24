@@ -529,6 +529,7 @@ body::-webkit-scrollbar {
 		height: 50vh;
 		width: 100vw;
 		display: inline-block;
+		min-height: fit-content;
 
 		&_containerImg {
 			position: unset;

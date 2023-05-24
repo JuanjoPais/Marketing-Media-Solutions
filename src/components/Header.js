@@ -20,17 +20,17 @@ const Header = () => {
 	}, []);
 
 	return (
-		<div class="header">
+		<div className="header">
 			<Nav />
-			<section class="header_section2">
-				<h1 class="header_title">Quiero potenciar tu crecimiento</h1>
+			<section className="header_section2">
+				<h1 className="header_title">Quiero potenciar tu crecimiento</h1>
 				{isSmallScreen ? (
-					<h2 class="header_text">
+					<h2 className="header_text">
 						Estoy acá para ayudarte a compartir de manera efectiva la historia
 						única de tu marca.
 					</h2>
 				) : (
-					<h2 class="header_text">
+					<h2 className="header_text">
 						Cada marca tiene una historia única que merece ser compartida y
 						estoy acá para ayudarte a hacerlo de la manera más efectiva posible.
 					</h2>

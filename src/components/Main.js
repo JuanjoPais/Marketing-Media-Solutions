@@ -20,7 +20,7 @@ const Main = () => {
 	}, []);
 
 	return (
-		<div class="sobreMi">
+		<div className="sobreMi">
 			<section className="sobreMi_containerImg">
 				<img
 					className="sobreMi_divImg"
@@ -29,8 +29,8 @@ const Main = () => {
 				></img>
 			</section>
 			<section className="sobreMi_containerText">
-				<article class="sobreMi_title">¿Quién soy?</article>
-				<article class="sobreMi_text">
+				<article className="sobreMi_title">¿Quién soy?</article>
+				<article className="sobreMi_text">
 					{isSmallScreen ? (
 						<p>
 							¡Hola! Soy sofía Sosa, experta en redes sociales y marketing

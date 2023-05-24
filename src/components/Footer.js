@@ -7,18 +7,18 @@ import {Link} from "react-scroll";
 const Footer = () => {
 	return (
 		<>
-			<div class="footer">
+			<div className="footer">
 				<div className="footer_textContainer">
-					<section class="footer_title">
+					<section className="footer_title">
 						<p>¡Charlemos!</p>
 					</section>
-					<section class="footer_subtitle">
+					<section className="footer_subtitle">
 						<p>
 							Hagamos que tu marca crezca exponencialmente, me podés contactar
 							también por{" "}
 							<a
 								href="mailto: marketingmedia.solutions1@gmail.com"
-								class="footer_subtitle_enlace"
+								className="footer_subtitle_enlace"
 							>
 								marketingmedia.solutions1@gmail.com
 							</a>
@@ -38,7 +38,7 @@ const Footer = () => {
 					</section>
 				</div>
 
-				<section class="footer_icons">
+				<section className="footer_icons">
 					<a
 						href="https://www.instagram.com/marketingmedia.solutions/"
 						target="_blank"
@@ -62,7 +62,7 @@ const Footer = () => {
 					</a>
 				</section>
 			</div>
-			<div class="footer2">
+			<div className="footer2">
 				<p>Impulsá tu presencia</p>
 			</div>
 		</>

@@ -106,7 +106,7 @@ const Servicios = () => {
 	};
 
 	return (
-		<div class="servicios">
+		<div className="servicios">
 			<h2 className="servicios_titulo">Servicios</h2>
 			<p className="servicios_texto">
 				En <span className="servicios_marca">Marketing Media Solutions</span>,
