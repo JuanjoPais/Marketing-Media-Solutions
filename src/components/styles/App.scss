@@ -209,7 +209,7 @@ body::-webkit-scrollbar {
 		color: #000000;
 		margin-top: -2%;
 	}
-	&_texto2{
+	&_texto2 {
 		display: none;
 	}
 	&_marca {
@@ -381,30 +381,6 @@ body::-webkit-scrollbar {
 	}
 }
 
-.slider {
-	overflow-x: hidden;
-	width: 100%;
-
-	background-color: #ed8c8c;
-	height: 100vh;
-	margin-bottom: 5%;
-
-	&_container {
-		display: flex;
-		cursor: grab;
-		height: 100%;
-		width: auto;
-	}
-	&_item {
-		padding: 2rem;
-		img {
-			height: 100%;
-			width: auto;
-			pointer-events: none;
-		}
-	}
-}
-
 .footer {
 	background-color: #040404;
 	color: #f7f7f7;
@@ -570,74 +546,79 @@ body::-webkit-scrollbar {
 			padding-top: 1%;
 		}
 	}
-	.servicios{
+	.servicios {
 		height: 150vh;
 
-		&_texto{
+		&_texto {
 			display: none;
 		}
-		&_texto2{
-			display:block;
+		&_texto2 {
+			display: block;
 			font-size: 1.25rem;
 			font-family: "Montserrat";
 			padding: 2.5vw;
 			margin-top: -1%;
 		}
-		&_titulo{
+		&_titulo {
 			font-size: 1.3rem;
 			color: #000000;
 		}
-		&_contenedorRecuadros{
+		&_contenedorRecuadros {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			align-content: space-around;
 			height: 150vh;
-			
-			
 		}
-		&_recuadro{
+		&_recuadro {
 			margin-bottom: 5%;
 		}
-		&_textoHover{
+		&_textoHover {
 			font-size: 0.7rem;
 		}
 	}
-	.proyectos{
-		&_titulo{
+	.proyectos {
+		&_titulo {
 			font-size: 1.3rem;
 			color: #000000;
+			font-weight: 700;
 		}
-		&__swiper_container {
-			height: 47rem;
+		&_swiper_container {
+			height: 34hv;
+		}
+
+		&_textoHover {
+			font-size: 0.9em;
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+			}
+		}
+
+		.swiper {
+			height: 34vh;
+			width: 66vw;
+			padding: 2% 23% 2% 8%;
 		}
 	}
 
-	
-	.swiper-slide {
-		width: 28rem !important;
-		height: 36rem !important;
-	}
-	.swiper-slide img {
-		width: 28rem !important;
-		height: 36rem !important;
-	}
-
-	.footer{
-		&_title{
+	.footer {
+		&_title {
 			font-size: 1.5rem;
 		}
-		&_subtitle{
+		&_subtitle {
 			font-size: 0.7rem;
 		}
-		&_logo{
+		&_logo {
 			width: 20vw;
 		}
-		&_icon{
+		&_icon {
 			width: 9.5vw;
 		}
 	}
-	.footer2{
+	.footer2 {
 		font-size: 4vw;
 	}
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 import {Swiper, SwiperSlide} from "swiper/react";
 
@@ -19,6 +19,22 @@ import img5 from "./fotosCarousel/5.png";
 import img6 from "./fotosCarousel/6.png";
 
 const Proyectos = () => {
+	const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+	useEffect(() => {
+		const handleResize = () => {
+			setIsSmallScreen(window.innerWidth < 576);
+		};
+
+		window.addEventListener("resize", handleResize);
+
+		handleResize();
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	const [contenidoSlide1, setContenidoSlide1] = useState(
 		<img src={img1} alt="foto de carousel" />
 	);
@@ -126,7 +142,7 @@ const Proyectos = () => {
 				grabCursor={true}
 				centeredSlides={false}
 				loop={false}
-				slidesPerView={"2"}
+				slidesPerView={isSmallScreen ? "1" : "2"}
 				navigation={{
 					nextEl: ".proyectos_swiper_button_next",
 					prevEl: ".proyectos_swiper_button_prev",
