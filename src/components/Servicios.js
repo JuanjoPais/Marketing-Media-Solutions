@@ -117,6 +117,11 @@ const Servicios = () => {
 				conectar con su audiencia, simplificando el proceso digital y manejando
 				todo, desde la estrategia hasta la implementación.
 			</p>
+			<p className="servicios_texto2">
+				En <span className="servicios_marca">Marketing Media Solutions</span>,
+				comprendemos a nuestros clientes, creamos estrategias personalizadas y
+				reflejamos su escencia única.
+			</p>
 			<section className="servicios_contenedorRecuadros">
 				<div
 					onMouseOver={handleMouseOverFrame1}

@@ -209,6 +209,9 @@ body::-webkit-scrollbar {
 		color: #000000;
 		margin-top: -2%;
 	}
+	&_texto2{
+		display: none;
+	}
 	&_marca {
 		color: #ed8c8c;
 		font-weight: 700;
@@ -567,10 +570,50 @@ body::-webkit-scrollbar {
 			padding-top: 1%;
 		}
 	}
+	.servicios{
+		height: 150vh;
 
-	.proyectos_swiper_container {
-		height: 47rem;
+		&_texto{
+			display: none;
+		}
+		&_texto2{
+			display:block;
+			font-size: 1.25rem;
+			font-family: "Montserrat";
+			padding: 2.5vw;
+			margin-top: -1%;
+		}
+		&_titulo{
+			font-size: 1.3rem;
+			color: #000000;
+		}
+		&_contenedorRecuadros{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-content: space-around;
+			height: 150vh;
+			
+			
+		}
+		&_recuadro{
+			margin-bottom: 5%;
+		}
+		&_textoHover{
+			font-size: 0.7rem;
+		}
 	}
+	.proyectos{
+		&_titulo{
+			font-size: 1.3rem;
+			color: #000000;
+		}
+		&__swiper_container {
+			height: 47rem;
+		}
+	}
+
+	
 	.swiper-slide {
 		width: 28rem !important;
 		height: 36rem !important;
@@ -578,5 +621,23 @@ body::-webkit-scrollbar {
 	.swiper-slide img {
 		width: 28rem !important;
 		height: 36rem !important;
+	}
+
+	.footer{
+		&_title{
+			font-size: 1.5rem;
+		}
+		&_subtitle{
+			font-size: 0.7rem;
+		}
+		&_logo{
+			width: 20vw;
+		}
+		&_icon{
+			width: 9.5vw;
+		}
+	}
+	.footer2{
+		font-size: 4vw;
 	}
 }

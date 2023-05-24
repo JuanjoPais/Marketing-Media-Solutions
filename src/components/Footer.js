@@ -33,7 +33,8 @@ const Footer = () => {
 							duration={500}
 							style={{cursor: "pointer"}}
 						>
-							<img src={logo} alt="" />
+							<img src={logo} alt="Logo Marketing Media Solutions" 
+							className="footer_logo"/>
 						</Link>
 					</section>
 				</div>
@@ -44,21 +45,26 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src={logoIG} alt="" />
+						<img src={logoIG} alt="Logo Instagram"
+						className="footer_icon" />
 					</a>
 					<a
 						href="https://www.instagram.com/marketingmedia.solutions/"
 						target="_blank"
 						rel="noreferrer"
+						
 					>
-						<img src={logoIG} alt="" />
+						<img src={logoIG} alt="" 
+						className="footer_icon"/>
 					</a>
 					<a
 						href="https://www.instagram.com/marketingmedia.solutions/"
 						target="_blank"
 						rel="noreferrer"
+						
 					>
-						<img src={logoIG} alt="" />
+						<img src={logoIG} alt="" 
+						className="footer_icon"/>
 					</a>
 				</section>
 			</div>
