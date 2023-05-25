@@ -33,8 +33,11 @@ const Footer = () => {
 							duration={500}
 							style={{cursor: "pointer"}}
 						>
-							<img src={logo} alt="Logo Marketing Media Solutions" 
-							className="footer_logo"/>
+							<img
+								src={logo}
+								alt="Logo Marketing Media Solutions"
+								className="footer_logo"
+							/>
 						</Link>
 					</section>
 				</div>
@@ -45,26 +48,21 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src={logoIG} alt="Logo Instagram"
-						className="footer_icon" />
+						<img src={logoIG} alt="Logo Instagram" className="footer_icon" />
 					</a>
 					<a
-						href="https://www.instagram.com/marketingmedia.solutions/"
+						href="https://www.linkedin.com/in/sofiasosacm/"
 						target="_blank"
 						rel="noreferrer"
-						
 					>
-						<img src={logoIG} alt="" 
-						className="footer_icon"/>
+						<ion-icon name="logo-linkedin" className="footer_icon"></ion-icon>
 					</a>
 					<a
-						href="https://www.instagram.com/marketingmedia.solutions/"
+						href="https://www.facebook.com/SofiaSosa.Marketingmediasolutions/"
 						target="_blank"
 						rel="noreferrer"
-						
 					>
-						<img src={logoIG} alt="" 
-						className="footer_icon"/>
+						<ion-icon name="logo-facebook" className="footer_icon"></ion-icon>
 					</a>
 				</section>
 			</div>

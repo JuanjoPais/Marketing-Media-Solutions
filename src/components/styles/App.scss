@@ -487,6 +487,7 @@ body::-webkit-scrollbar {
 			padding-left: 5%;
 			width: 90%;
 			margin-top: 4%;
+			padding-bottom: 5%;
 			font-weight: 100;
 			text-align: start;
 			font-size: 1.4em;
@@ -514,7 +515,7 @@ body::-webkit-scrollbar {
 			position: unset;
 			width: 30%;
 			height: 20vh;
-			margin-top: 15%;
+			margin-top: 6%;
 			margin-right: 10%;
 			float: right;
 			margin-bottom: 10%;
@@ -528,6 +529,7 @@ body::-webkit-scrollbar {
 			width: 99%;
 			height: 100%;
 			padding-left: 1%;
+			padding-top: 4%;
 		}
 		&_title {
 			width: fit-content;
@@ -537,7 +539,7 @@ body::-webkit-scrollbar {
 			padding-top: 8%;
 		}
 		&_text {
-			font-size: 4.5vw;
+			font-size: 3.5vw;
 			font-weight: 400;
 			line-height: 180%;
 			width: 80%;
@@ -558,6 +560,7 @@ body::-webkit-scrollbar {
 			font-family: "Montserrat";
 			padding: 2.5vw;
 			margin-top: -1%;
+			width: 96%;
 		}
 		&_titulo {
 			font-size: 1.3rem;
@@ -620,5 +623,9 @@ body::-webkit-scrollbar {
 	}
 	.footer2 {
 		font-size: 4vw;
+	}
+	ion-icon {
+		font-size: 47.5px;
+		color: white;
 	}
 }
