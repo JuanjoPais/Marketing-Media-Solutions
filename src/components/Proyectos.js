@@ -164,7 +164,7 @@ const Proyectos = () => {
 				{" "}
 				<Carousel
 					swipeable={false}
-					draggable={false}
+					draggable={true}
 					showDots={false}
 					responsive={responsive}
 					ssr={true} // means to render carousel on server-side.
@@ -174,7 +174,6 @@ const Proyectos = () => {
 					customTransition="all .5"
 					transitionDuration={500}
 					containerClass="carousel-container"
-					removeArrowOnDeviceType={["tablet", "mobile"]}
 					dotListClass="custom-dot-list-style"
 					itemClass="carousel-item-padding-40-px"
 				>
@@ -184,7 +183,7 @@ const Proyectos = () => {
 					<div>Item 4s</div>
 				</Carousel>
 			</div>
-			;
+
 			{/* <Swiper
 				grabCursor={true}
 				centeredSlides={isSmallScreen ? true : false}
