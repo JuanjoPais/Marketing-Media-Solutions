@@ -642,6 +642,9 @@ ion-icon {
 @media (max-width: 330px) {
 	.servicios {
 		height: 180vh;
+		&_contenedorRecuadros {
+			height: 100%;
+		}
 	}
 	.proyectos {
 		margin-top: 50px;
