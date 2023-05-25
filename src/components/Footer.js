@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "./images/logo.png";
-import logoIG from "./images/igLogo.png";
 
 import {Link} from "react-scroll";
 
@@ -48,14 +47,14 @@ const Footer = () => {
 						target="_blank"
 						rel="noreferrer"
 					>
-						<img src={logoIG} alt="Logo Instagram" className="footer_icon" />
+						<ion-icon name="logo-instagram" className="footer_icon"></ion-icon>
 					</a>
 					<a
 						href="https://www.linkedin.com/in/sofiasosacm/"
 						target="_blank"
 						rel="noreferrer"
 					>
-						<ion-icon name="logo-linkedin" className="footer_icon"></ion-icon>
+						<ion-icon name="logo-linkedin"></ion-icon>
 					</a>
 					<a
 						href="https://www.facebook.com/SofiaSosa.Marketingmediasolutions/"

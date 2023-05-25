@@ -101,6 +101,7 @@ body::-webkit-scrollbar {
 
 .linkWhatsApp {
 	text-decoration: none;
+	display: contents;
 }
 .Contacto {
 	position: sticky;
@@ -437,6 +438,11 @@ body::-webkit-scrollbar {
 	align-items: center;
 }
 
+ion-icon {
+	font-size: 7vw;
+	color: white;
+}
+
 @media (max-width: 576px) {
 	.nav {
 		position: unset;
@@ -572,6 +578,7 @@ body::-webkit-scrollbar {
 			justify-content: space-between;
 			align-content: space-around;
 			height: 150vh;
+			row-gap: 3%;
 		}
 		&_recuadro {
 			margin-bottom: 5%;
