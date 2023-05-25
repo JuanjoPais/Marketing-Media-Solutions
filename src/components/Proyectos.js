@@ -140,7 +140,7 @@ const Proyectos = () => {
 			</div>
 			<Swiper
 				grabCursor={true}
-				centeredSlides={false}
+				centeredSlides={isSmallScreen ? true : false}
 				loop={false}
 				slidesPerView={isSmallScreen ? "1" : "2"}
 				navigation={{
