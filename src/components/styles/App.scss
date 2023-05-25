@@ -577,7 +577,7 @@ ion-icon {
 			font-weight: 700;
 		}
 		&_swiper_container {
-			height: 34hv;
+			height: 34vh;
 		}
 
 		&_textoHover {
@@ -642,6 +642,9 @@ ion-icon {
 @media (max-width: 330px) {
 	.servicios {
 		height: 180vh;
+		&_contenedorRecuadros {
+			height: 100%;
+		}
 	}
 	.proyectos {
 		margin-top: 50px;
