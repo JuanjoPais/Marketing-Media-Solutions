@@ -450,8 +450,6 @@ ion-icon {
 }
 
 @media (max-width: 576px) {
-	
-
 	.header {
 		width: 100vw;
 		justify-content: flex-start;
@@ -459,9 +457,10 @@ ion-icon {
 
 		&_section2 {
 			display: flex;
+			justify-content: center;
 			flex-direction: column;
 			align-items: flex-start;
-			height: 50%;
+			height: 100%;
 			padding-left: 0%;
 			padding-right: 0%;
 			width: 100vw;
