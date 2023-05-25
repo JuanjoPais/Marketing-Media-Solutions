@@ -181,7 +181,7 @@ const Proyectos = () => {
 					<div>Item 1</div>
 					<div>Item 2</div>
 					<div>Item 3</div>
-					<div>Item 4</div>
+					<div>Item 4s</div>
 				</Carousel>
 			</div>
 			;
