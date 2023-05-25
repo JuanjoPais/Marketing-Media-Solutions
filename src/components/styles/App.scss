@@ -521,7 +521,7 @@ ion-icon {
 			position: unset;
 			width: 30%;
 			height: 20vh;
-			margin-top: 6%;
+			margin-top: 4%;
 			margin-right: 10%;
 			float: right;
 			margin-bottom: 10%;
@@ -535,7 +535,7 @@ ion-icon {
 			width: 99%;
 			height: 100%;
 			padding-left: 1%;
-			padding-top: 4%;
+			padding-top: 6%;
 		}
 		&_title {
 			width: fit-content;
@@ -634,5 +634,19 @@ ion-icon {
 	ion-icon {
 		font-size: 47.5px;
 		color: white;
+	}
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+	.sobreMi{
+		padding-top: 10%;
+		&_divImg{
+			height: 60vw;
+			width: 45vw;
+		}
+	}
+	.proyectos{
+		&_textoHover{
+			font-size: 3vw;
+		}
 	}
 }
