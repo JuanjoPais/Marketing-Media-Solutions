@@ -280,6 +280,8 @@ body::-webkit-scrollbar {
 	padding: 4rem, 1rem;
 	margin: 0 auto;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 
 	&_titulo {
 		font-family: "Droid Serif";
