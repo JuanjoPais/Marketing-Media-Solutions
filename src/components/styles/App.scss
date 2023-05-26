@@ -540,7 +540,7 @@ ion-icon {
 		}
 	}
 	.servicios {
-		height: 1350px;
+		height: 85rem;
 
 		&_texto {
 			display: none;
@@ -645,12 +645,12 @@ ion-icon {
 
 @media (max-width: 330px) {
 	.servicios {
-		height: 1350px;
 		&_contenedorRecuadros {
 			height: 100%;
+			margin-bottom: 10%;
 		}
 	}
 	.proyectos {
-		margin-top: 50px;
+		margin-top: 10px;
 	}
 }
