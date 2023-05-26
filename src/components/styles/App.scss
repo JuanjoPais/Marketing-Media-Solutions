@@ -573,7 +573,8 @@ ion-icon {
 		}
 	}
 	.proyectos {
-		height: fit-content;
+		max-height: fit-content;
+		flex-wrap: wrap;
 		&_titulo {
 			font-size: 1.3rem;
 			color: #000000;
